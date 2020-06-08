@@ -18,6 +18,7 @@ namespace Chapter1
             InitializeComponent();
         }
 
+        //menambahkan event handler
         private void btnSubmit_Clicked(object sender, EventArgs e)
         {
             string firstName = entryFirstName.Text;
