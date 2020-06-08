@@ -25,5 +25,10 @@ namespace Chapter1
             string lastName = entryLastName.Text;
             DisplayAlert("Keterangan",$"Nama anda adalah: {firstName} {lastName}","OK");
         }
+
+        private void btnHello_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Keterangan", "Hello Xamarin", "OK");
+        }
     }
 }

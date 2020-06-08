@@ -11,8 +11,10 @@
         <!-- Place new controls here -->
         <Entry x:Name="entryFirstName" Placeholder="insert first name" />
         <Entry x:Name="entryLastName" Placeholder="insert last name" />
+        
         <Button x:Name="btnSubmit" Text="Submit" BackgroundColor="Yellow"
                 Clicked="btnSubmit_Clicked" />
+        <Button x:Name="btnHello" Text="Hello" Clicked="btnHello_Clicked" />
         <Label Text="Pelatihan Xamarin Forms" FontSize="Large" TextColor="Red"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />

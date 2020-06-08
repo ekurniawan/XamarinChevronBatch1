@@ -9,7 +9,6 @@ namespace Chapter1
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage();
         }
 
