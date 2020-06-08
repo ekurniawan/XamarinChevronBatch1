@@ -4,23 +4,28 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Chapter1.MainPage">
+             x:Class="Chapter1.MainPage"
+             xmlns:local="clr-namespace:Chapter1">
 
-    <StackLayout Orientation="Vertical">
-        
+    <StackLayout>
         <!-- Place new controls here -->
         <Entry x:Name="entryFirstName" Placeholder="insert first name" />
         <Entry x:Name="entryLastName" Placeholder="insert last name" />
-        
-        <Button x:Name="btnSubmit" Text="Submit" BackgroundColor="Yellow"
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnSubmit" Text="Submit" 
+                BackgroundColor="{x:Static local:SharedResources.ButtonTextColor}"
                 Clicked="btnSubmit_Clicked" />
-        <Button x:Name="btnHello" Text="Hello" Clicked="btnHello_Clicked" />
+            <Button x:Name="btnHello" Text="Hello" Clicked="btnHello_Clicked" />
+            <Button x:Name="btnTambah" Text="Tambah" />
+        </StackLayout>
+        
+
         <Label Text="Pelatihan Xamarin Forms" FontSize="Large" TextColor="Red"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         <Label Text="Hot Reload Feature" FontSize="Medium" HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand" TextColor="Green" />
-       
     </StackLayout>
 
 </ContentPage>

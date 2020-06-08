@@ -16,6 +16,13 @@ namespace Chapter1
         public MainPage()
         {
             InitializeComponent();
+            btnTambah.Clicked += BtnTambah_Clicked;
+        }
+
+        private void BtnTambah_Clicked(object sender, EventArgs e)
+        {
+            //DisplayAlert("Keterangan", "Button Tambah", "OK");
+            btnSubmit.BackgroundColor = SharedResources.ButtonBkColor;
         }
 
         //menambahkan event handler
