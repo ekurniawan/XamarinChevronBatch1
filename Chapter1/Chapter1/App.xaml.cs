@@ -9,7 +9,7 @@ namespace Chapter1
         public App()
         {
             InitializeComponent();
-            MainPage = new MainPage();
+            MainPage = new AbsoluteLayoutPage();
         }
 
         protected override void OnStart()
