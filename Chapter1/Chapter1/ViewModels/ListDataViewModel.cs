@@ -13,9 +13,12 @@ namespace Chapter1.ViewModels
         {
             lstItems = new List<ListItem>
             {
-                new ListItem{Title="Xamarin Android",Description="Belajar Xamarin for Android"},
-                new ListItem{Title="Xamarin IOS",Description="Belajar Xamarin for IOS"},
-                new ListItem{Title="Xamarin Cross Platform",Description="Belajar Xamarin Cross Platform"}
+                new ListItem{Title="Xamarin Android",
+                    Description="Belajar Xamarin for Android",Source="monkey.png"},
+                new ListItem{Title="Xamarin IOS",Description="Belajar Xamarin for IOS",
+                    Source="monkey.png"},
+                new ListItem{Title="Xamarin Cross Platform",
+                    Description="Belajar Xamarin Cross Platform",Source="monkey.png"}
             };
         }
 

@@ -9,7 +9,7 @@ namespace Chapter1
         public App()
         {
             InitializeComponent();
-            MainPage = new BindingNoMVVM();
+            MainPage = new ListViewImageCell();
         }
 
         protected override void OnStart()
