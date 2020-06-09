@@ -10,6 +10,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -18,10 +19,11 @@
             
             <Button Grid.Row="0" Grid.Column="0" Text="Tombol 1" />
             <Button Grid.Row="0" Grid.Column="1" Text="Tombol 2" BackgroundColor="Red" />
-            <StackLayout Grid.Column="1" Grid.Row="1">
+            <StackLayout Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" >
                 <StackLayout Orientation="Horizontal">
                     <Button Text="Hello" />
                     <Button Text="World" />
+                    <Button Text="Xamarin" />
                 </StackLayout>
                 <Button Text="Xamarin" />
             </StackLayout>

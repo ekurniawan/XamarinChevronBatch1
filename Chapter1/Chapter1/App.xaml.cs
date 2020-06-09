@@ -9,7 +9,7 @@ namespace Chapter1
         public App()
         {
             InitializeComponent();
-            MainPage = new GridLayoutPage();
+            MainPage = new ImageViewPage();
         }
 
         protected override void OnStart()
