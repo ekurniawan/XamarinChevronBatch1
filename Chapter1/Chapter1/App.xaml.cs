@@ -9,7 +9,7 @@ namespace Chapter1
         public App()
         {
             InitializeComponent();
-            MainPage = new CustomListViewPage();
+            MainPage = new NavigationPage(new ContohNavigasiPage());
         }
 
         protected override void OnStart()

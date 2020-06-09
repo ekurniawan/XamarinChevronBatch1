@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" Title="Halaman Navigasi"
+             x:Class="Chapter1.ContohNavigasiPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary" Text="Add" 
+                     IconImageSource="ic_launcher.png" Clicked="btnNavImageList_Clicked"  />
+        <ToolbarItem Text="Simple List" Order="Secondary" Clicked="btnNavSimpleList_Clicked" />
+        <ToolbarItem Text="Image List" Order="Secondary" Clicked="btnNavImageList_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Button x:Name="btnNavSimpleList" Text="Simple List" 
+                    Clicked="btnNavSimpleList_Clicked" />
+            <Button x:Name="btnNavImageList" Text="Image List"
+                    Clicked="btnNavImageList_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

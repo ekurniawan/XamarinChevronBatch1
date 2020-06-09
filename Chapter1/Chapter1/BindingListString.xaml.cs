@@ -29,5 +29,10 @@ namespace Chapter1
                  "OK");
             ((ListView)sender).SelectedItem = null;
         }
+
+        private async void btnBack_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }
