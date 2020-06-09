@@ -18,6 +18,16 @@ namespace Chapter1
             List<string> lstBarang = new List<string> { "Motherboard","Monitor","Mouse",
                 "RAM", "SSD Hardisk" };
             lvData.ItemsSource = lstBarang;
+
+            lvData.ItemTapped += LvData_ItemTapped;
+        }
+
+        private void LvData_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            DisplayAlert("Keterangan",
+                $"Anda mengakses data {e.Item} sudah dipilih", 
+                 "OK");
+            ((ListView)sender).SelectedItem = null;
         }
     }
 }
