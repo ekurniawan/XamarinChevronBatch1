@@ -9,7 +9,7 @@ namespace Chapter1
         public App()
         {
             InitializeComponent();
-            MainPage = new ListViewImageCell();
+            MainPage = new CustomListViewPage();
         }
 
         protected override void OnStart()
