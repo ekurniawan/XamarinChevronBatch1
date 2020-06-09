@@ -9,7 +9,7 @@ namespace Chapter1
         public App()
         {
             InitializeComponent();
-            MainPage = new ImageViewPage();
+            MainPage = new BindingListString();
         }
 
         protected override void OnStart()
