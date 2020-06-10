@@ -16,5 +16,10 @@ namespace Chapter1
         {
             InitializeComponent();
         }
+
+        private void btnNext_Clicked(object sender, EventArgs e)
+        {
+            CurrentPage = Children[3];
+        }
     }
 }

@@ -10,16 +10,17 @@
     <TabbedPage.Children>
         <local:BindingListString Title="Binding List" IconImageSource="ic_launcher.png" />
         <local:CustomListViewPage Title="Custom List" />
+        <local:AlertPage Title="Alert" />
+        <ContentPage Title="Tab 2">
+            <StackLayout>
+                <Label Text="Halaman Tab 2" FontSize="Large" />
+                <Button x:Name="btnNext" Text="Next" Clicked="btnNext_Clicked" />
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Tab 3">
+            <StackLayout>
+                <Label Text="Halaman Tab 3" FontSize="Large" />
+            </StackLayout>
+        </ContentPage>
     </TabbedPage.Children>
-    <ContentPage Title="Tab 2">
-        <StackLayout>
-            <Label Text="Halaman Tab 2" FontSize="Large" />
-            <Button Text="Submit" />
-        </StackLayout>
-    </ContentPage>
-    <ContentPage Title="Tab 3">
-        <StackLayout>
-            <Label Text="Halaman Tab 3" FontSize="Large" />
-        </StackLayout>
-    </ContentPage>
 </TabbedPage>
