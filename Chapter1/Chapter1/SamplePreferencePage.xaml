@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" Title="Sample Preference"
+             x:Class="Chapter1.SamplePreferencePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnBuatPreference" Text="Buat Preference" Clicked="btnBuatPreference_Clicked" />
+            <Button x:Name="btnEditPreference" Text="Edit Preference" Clicked="btnEditPreference_Clicked" />
+            <Button x:Name="btnShowPreference" Text="Show Preference" Clicked="btnShowPreference_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

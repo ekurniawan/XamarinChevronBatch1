@@ -34,5 +34,10 @@ namespace Chapter1
             Application.Current.Properties["id"] = entryName.Text;
             DisplayAlert("App Current", "Data App Curent sudah disimpan", "OK");
         }
+
+        private async void btnPreference_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SamplePreferencePage());
+        }
     }
 }

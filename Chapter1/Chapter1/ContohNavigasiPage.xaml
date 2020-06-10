@@ -19,6 +19,7 @@
                     Clicked="btnNavSimpleList_Clicked" />
             <Button x:Name="btnNavImageList" Text="Image List"
                     Clicked="btnNavImageList_Clicked"/>
+            <Button x:Name="btnPreference" Text="Preference" Clicked="btnPreference_Clicked"/>
             <Button x:Name="btnAppCurrent" Text="App Current" Clicked="btnAppCurrent_Clicked" />
         </StackLayout>
     </ContentPage.Content>
