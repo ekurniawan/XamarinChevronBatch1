@@ -26,5 +26,13 @@ namespace Chapter1
         {
             await Navigation.PushAsync(new ListViewImageCell());
         }
+
+        private void btnAppCurrent_Clicked(object sender, EventArgs e)
+        {
+            //var id = Application.Current.Properties["id"].ToString();
+            //DisplayAlert("App Current", $"ID anda : {id}", "OK");
+            Application.Current.Properties["id"] = entryName.Text;
+            DisplayAlert("App Current", "Data App Curent sudah disimpan", "OK");
+        }
     }
 }

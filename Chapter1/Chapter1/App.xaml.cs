@@ -9,6 +9,9 @@ namespace Chapter1
         public App()
         {
             InitializeComponent();
+
+            //application current
+            Application.Current.Properties["id"] = "erick";
             MainPage = new NavigationPage(new ContohNavigasiPage());
         }
 

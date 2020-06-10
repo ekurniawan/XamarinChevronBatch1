@@ -52,5 +52,11 @@ namespace Chapter1
         {
             DisplayAlert("Parameter", $"Nilai param: {_firstName}", "OK");
         }
+
+        private void btnAppCurrent_Clicked(object sender, EventArgs e)
+        {
+            var id = Application.Current.Properties["id"].ToString();
+            DisplayAlert("App Current", $"ID anda : {id}", "OK");
+        }
     }
 }

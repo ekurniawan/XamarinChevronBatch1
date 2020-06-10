@@ -10,6 +10,7 @@
             <ListView x:Name="lvData" />
             <Button x:Name="btnBack" Text="Back" Clicked="btnBack_Clicked" />
             <Button x:Name="btnShowParam" Text="Show Param" Clicked="btnShowParam_Clicked" />
+            <Button x:Name="btnAppCurrent" Text="Show App Current" Clicked="btnAppCurrent_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
