@@ -3,15 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" Title="Alert Page"
-             x:Class="Chapter1.AlertPage">
+             mc:Ignorable="d"
+             x:Class="Chapter1.ProgressPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="DisplayAlert" FontSize="Large" HorizontalOptions="Center" />
-            <Button x:Name="btnAlert" Text="Alert Yes/No" 
-                    Clicked="btnAlert_Clicked" />
-            <Button x:Name="btnActionSheet" Text="Action Sheet" 
-                    Clicked="btnActionSheet_Clicked" />
+            <ProgressBar x:Name="myProgress" Progress="0.2"  />
+            <Button x:Name="btnProgress" Text="Progress" Clicked="btnProgress_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
