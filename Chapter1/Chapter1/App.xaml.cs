@@ -13,7 +13,7 @@ namespace Chapter1
             //application current
             Application.Current.Properties["id"] = "erick";
             //MainPage = new NavigationPage(new ContohNavigasiPage());
-            MainPage = new SampleTabbedPage();
+            MainPage = new MyMasterDetailPage();
         }
 
         protected override void OnStart()
