@@ -34,15 +34,17 @@ namespace Chapter1
                 MenuItems = new ObservableCollection<MyMasterDetailPageMasterMenuItem>(new[]
                 {
                     new MyMasterDetailPageMasterMenuItem { Id = 0, Title = "Simple List",
-                        TargetType=typeof(BindingListString)},
+                        TargetType=typeof(BindingListString),IconSource="ic_launcher.png"},
                     new MyMasterDetailPageMasterMenuItem { Id = 1, Title = "Image List",
-                        TargetType=typeof(ListViewImageCell)},
+                        TargetType=typeof(ListViewImageCell),IconSource="ic_launcher.png"},
                     new MyMasterDetailPageMasterMenuItem { Id = 2, Title = "Custom List",
-                        TargetType=typeof(CustomListViewPage)},
+                        TargetType=typeof(CustomListViewPage),IconSource="ic_launcher.png"},
                     new MyMasterDetailPageMasterMenuItem { Id = 3, Title = "Alert",
-                        TargetType=typeof(AlertPage)},
+                        TargetType=typeof(AlertPage),IconSource="ic_launcher.png"},
                     new MyMasterDetailPageMasterMenuItem { Id = 4, Title = "Progress",
-                        TargetType=typeof(ProgressPage)},
+                        TargetType=typeof(ProgressPage),IconSource="ic_launcher.png"},
+                    new MyMasterDetailPageMasterMenuItem{Id=5,Title="Sample Tab",
+                        TargetType=typeof(SampleTabbedPage),IconSource="ic_launcher.png"},
                 });
             }
 
