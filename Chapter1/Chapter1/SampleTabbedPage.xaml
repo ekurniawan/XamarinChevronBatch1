@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:Chapter1"
+             x:Class="Chapter1.SampleTabbedPage">
+  <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <local:BindingListString Title="Binding List" IconImageSource="ic_launcher.png" />
+        <local:CustomListViewPage Title="Custom List" />
+    </TabbedPage.Children>
+    <ContentPage Title="Tab 2">
+        <StackLayout>
+            <Label Text="Halaman Tab 2" FontSize="Large" />
+            <Button Text="Submit" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Tab 3">
+        <StackLayout>
+            <Label Text="Halaman Tab 3" FontSize="Large" />
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
