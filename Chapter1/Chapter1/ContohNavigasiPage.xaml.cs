@@ -19,7 +19,7 @@ namespace Chapter1
 
         private async void btnNavSimpleList_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BindingListString());
+            await Navigation.PushAsync(new BindingListString(entryName.Text));
         }
 
         private async void btnNavImageList_Clicked(object sender, EventArgs e)

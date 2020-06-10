@@ -8,12 +8,13 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Order="Primary" Text="Add" 
                      IconImageSource="ic_launcher.png" Clicked="btnNavImageList_Clicked"  />
+        <ToolbarItem Order="Primary" Text="Delete" Clicked="btnNavSimpleList_Clicked" />
         <ToolbarItem Text="Simple List" Order="Secondary" Clicked="btnNavSimpleList_Clicked" />
         <ToolbarItem Text="Image List" Order="Secondary" Clicked="btnNavImageList_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        
         <StackLayout>
+            <Entry x:Name="entryName" Placeholder="Insert Name" />
             <Button x:Name="btnNavSimpleList" Text="Simple List" 
                     Clicked="btnNavSimpleList_Clicked" />
             <Button x:Name="btnNavImageList" Text="Image List"

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,8 @@ namespace Chapter1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BindingListString : ContentPage
     {
-        public BindingListString()
+        private string _firstName;
+        private void InisialisasiData()
         {
             InitializeComponent();
             List<string> lstBarang = new List<string> { "Motherboard","Monitor","Mouse",
@@ -20,6 +22,17 @@ namespace Chapter1
             lvData.ItemsSource = lstBarang;
 
             lvData.ItemTapped += LvData_ItemTapped;
+        }
+
+        public BindingListString()
+        {
+            InisialisasiData();
+        }
+
+        public BindingListString(string firstName)
+        {
+            InisialisasiData();
+            _firstName = firstName;
         }
 
         private void LvData_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -33,6 +46,11 @@ namespace Chapter1
         private async void btnBack_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
+        }
+
+        private void btnShowParam_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Parameter", $"Nilai param: {_firstName}", "OK");
         }
     }
 }
